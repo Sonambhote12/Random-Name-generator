@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="./js/script.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <i class="fab fa-youtube"></i>
+        <h1>Name Generator for coding Channel</h1>
+    </header>
+    
+    <main>
+        <section class="submitSection">
+            <h2 id="formHeading" class="offscreen">Enter your First Name</h2>
+            <form id="submitForm" class="submitSection">
+                <input
+                    type="text"
+                    id="submitSection_textInput"
+                    class="submitSecition_textInput"
+                    required
+                    maxlength="20"
+                    placeholder="Enter your First Name"
+                    aria-labelledby="formHeading">
+                <button class="submissionSection_button" aria-label="Submit">
+                    <i class="far fa-check-circle"></i>
+                </button>
+            </form>
+        </section>
+        <section id="suggestionSection" class="suggestionSection hidden">
+            <h2>Suggestion:</h2>
+            <ol></ol>
+            <p>YMMV: Click the name to see if it is already taken</p>
+            
+        </section>
+    </main>
+
+  
+</body>
+</html>
